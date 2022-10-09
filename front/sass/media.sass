@@ -1,9 +1,9 @@
-@media screen and (max-width: 1120px)
+@media screen and (max-width: 1190px)
   .banner
     padding: 75px 0 50px 0
     &__title
-      font-size: 64px
-      line-height: 62px
+      font-size: 46px
+      line-height: 50px
     &__button
       font-size: 18px
       line-height: 23px
@@ -38,9 +38,21 @@
         position: relative
         top: -50px
 
+@media screen and (max-width: 820px)
+  .banner
+    &__title
+      font-size: 43px
+      line-height: 44px
+    &__info
+      transform-origin: left center
+      transform: scale(0.9)
+
 @media screen and (max-width: 770px)
   .banner
     background-position: -114px 0
+    &__dep
+      &-left
+        margin: -22px 15px 0 0
 
 @media screen and (max-width: 735px)
   .banner
@@ -56,11 +68,13 @@
     padding: 50px 0 135px 0
     background-position: 50% 0
     position: relative
+    &__info
+      transform: none
     &__container
       position: static
     &__title
-      font-size: 45px
-      line-height: 41px
+      font-size: 42px
+      line-height: 50px
       text-align: center
       margin: 0 0 23px 0
     &__button
@@ -110,7 +124,7 @@
         p
           font-size: 24px
           line-height: 31px
-          margin: 0 -8px 0 -22px
+          margin: 0 -3px 0 -11px
           position: relative
           top: 9px
           span
@@ -128,6 +142,12 @@
     &__dep
       .in-mob
         display: none
+
+@media screen and (max-width: 365px)
+  .banner
+    &__title
+      font-size: 36px
+      line-height: 46px
 
 @media screen and (max-width: 345px)
   .banner
